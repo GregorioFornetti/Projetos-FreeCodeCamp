@@ -7,83 +7,171 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id='title'>Formulário gamer</h1>
-    <p id='description'>Nos conte um pouco sua experiência com os games</p>
-    
     <form id='survey-form'>
-      <label for='name' id='name-label'>nome</label>
-      <input id='name' placeholder='Digite o seu nome' type='text' required>
+      <h1 id='title'>Formulário gamer</h1>
+      <p id='description'>Nos conte um pouco sobre sua experiência com os games</p>
       
-      <label for='email' id='email-label'>e-mail</label>
-      <input id='email' placeholder='Digite o seu e-mail' type='email' required>
+      <label for='name' id='name-label'>Nome</label>
+      <input id='name' placeholder='Digite o seu nome' type='text' class='input-barra' required>
       
-      <label for='number' id='number-label'>idade</label>
-      <input id='number' placeholder='Digite a sua idade' type='number' min='4' max='150'>
+      <label for='email' id='email-label'>E-mail</label>
+      <input id='email' placeholder='Digite o seu e-mail' type='email' class='input-barra' required>
       
-      <select id='dropdown'>
-        <option value='x'>x</option>
-        <option value='y'>y</option>
+      <label for='number' id='number-label'>Idade</label>
+      <input id='number' placeholder='Digite a sua idade' type='number' class='input-barra' min='4' max='150'>
+      
+      <label for='dropdown'>Qual opção descreve melhor seu cargo atual?</label>
+      <select id='dropdown' class='input-barra'>
+        <option value='' selected disabled>Selecione uma opção</option>
+        <option value='Empregado'>Empregado</option>
+        <option value='Estudante-u'>Estudante universitário</option>
+        <option value='Estudante-e'>Estudante escolar</option>
+        <option value='Desempregado'>Desempregado</option>
+        <option value='Outro'>Outro cargo</option>
       </select>
       
       <fieldset>
         <legend>Qual é o seu sexo ?</legend>
         
-        <input type='radio' name='sexo' id='masculino' value='masculino'>
-        <label for='masculino'>Masculino</label>
+        <label for='masculino'>
+          <input type='radio' name='sexo' id='masculino' value='masculino'>Masculino
+        </label>
         
-        <input type='radio' name='sexo' id='feminino' value='feminino'>
-        <label for='feminino'>Feminino</label>
+        <label for='feminino'>
+          <input type='radio' name='sexo' id='feminino' value='feminino'>Feminino
+        </label>
         
-        <input type='radio' name='sexo' id='outro' value='outro'>
-        <label for='outro'>Outro</label>
+        <label for='outro'>
+          <input type='radio' name='sexo' id='outro' value='outro'>Outro
+        </label>
       </fieldset>
       
       <fieldset>
         <legend>Você gosta de jogar videogames ?</legend>
         
-        <input type='radio' name='gosta-game' id='sim' value='sim'>
-        <label for='sim'>Sim</label>
+        <label for='sim'>
+          <input type='radio' name='gosta-game' id='sim' value='sim'>Sim
+        </label>
         
-        <input type='radio' name='gosta-game' id='nao' value='nao'>
-        <label for='nao'>Não</label>
+        <label for='nao'>
+          <input type='radio' name='gosta-game' id='nao' value='nao'>Não
+        </label>
       </fieldset>
       
       <fieldset>
         <legend>O quão frequente você joga videogames ?</legend>
         
-        <input type='radio' name='freq' id='todos dias' value='todos dias'>
-        <label for='todos dias'>Jogo todos os dias</label>
+        <label for='todos dias'>
+          <input type='radio' name='freq' id='todos dias' value='todos dias'>Jogo todos os dias
+        </label>
         
-        <input type='radio' name='freq' id='todas semanas' value='todos semanas'>
-        <label for='todos semanas'>Jogo todas as semanas</label>
+        <label for='todos semanas'>
+          <input type='radio' name='freq' id='todas semanas' value='todos semanas'>Jogo todas as semanas
+        </label>
         
-        <input type='radio' name='freq' id='raramente' value='raramente'>
-        <label for='raramente'>Jogo raramente</label>
-        
-        <input type='radio' name='freq' id='nunca' value='nunca'>
-        <label for='nunca'>Nunca joguei</label>
+        <label for='raramente'>
+          <input type='radio' name='freq' id='raramente' value='raramente'>Jogo raramente
+        </label>
+
+        <label for='nunca'>
+          <input type='radio' name='freq' id='nunca' value='nunca'>Nunca joguei
+        </label>
       </fieldset>
       
-      <fieldset>
+      <fieldset style='margin-bottom: 35px;'>
         <legend>Marque os jogos que você já jogou</legend>
         
-        <input type='checkbox' name='jogo' id='Zelda' value='Zelda'>
-        <label for='Zelda'>Zelda</label>
+        <label for='Zelda'>
+          <input type='checkbox' name='jogo' id='Zelda' value='Zelda'>Zelda
+        </label>
         
-        <input type='checkbox' name='jogo' id='Super Mario Bros' value='Super Mario Bros'>
-        <label for='Super Mario Bros'>Super Mario Bros</label>
+        <label for='Super Mario Bros'>
+          <input type='checkbox' name='jogo' id='Super Mario Bros' value='Super Mario Bros'>Super Mario Bros
+        </label>
         
-        <input type='checkbox' name='jogo' id='Sonic' value='Sonic'>
-        <label for='Sonic'>Sonic</label>
+        <label for='Sonic'>
+          <input type='checkbox' name='jogo' id='Sonic' value='Sonic'>Sonic
+        </label>
         
-        <input type='checkbox' name='jogo' id='Space Invaders' value='Space Invaders'>
-        <label for='Space Invaders'>Space Invaders</label>
+        <label for='Space Invaders'>
+          <input type='checkbox' name='jogo' id='Space Invaders' value='Space Invaders'>Space Invaders
+        </label>
+        
+        <label for='Pac-Man'>
+          <input type='checkbox' name='jogo' id='pacman' value='pacman'>Pac-Man
+        </label>
+        
+        <label for='Mortal Kombat'>
+          <input type='checkbox' name='jogo' id='Mortal Kombat' value='Mortal Kombat'>Mortal Kombat
+        </label>
+        
+        <label for='God of War'>
+          <input type='checkbox' name='jogo' id='God of War' value='God of War'>God of War
+        </label>
+        
+        <label for='Mario Kart'>
+          <input type='checkbox' name='jogo' id='Mario Kart' value='Mario Kart'>Mario Kart
+        </label>
+        
+        <label for='GTA'>
+          <input type='checkbox' name='jogo' id='GTA' value='GTA'><abbr title='Grand Theft Auto'>GTA</abbr>
+        </label>
+        
+        <label for='Starcraft'>
+          <input type='checkbox' name='jogo' id='Starcraft' value='Starcraft'>Starcraft
+        </label>
+        
+        <label for='wow'>
+          <input type='checkbox' name='jogo' id='wow' value='wow'>World of Warcraft
+        </label>
+        
+        <label for='cod'>
+          <input type='checkbox' name='jogo' id='cod' value='cod'>Call of Duty
+        </label>
+        
+        <label for='cs'>
+          <input type='checkbox' name='jogo' id='cs' value='cs'>Counter strike
+        </label>
+        
+        <label for='minecraft'>
+          <input type='checkbox' name='jogo' id='minecraft' value='minecraft'>Minecraft
+        </label>
+        
+        <label for='lol'>
+          <input type='checkbox' name='jogo' id='lol' value='lol'>League of Legends
+        </label>
+        
+        <label for='dota'>
+          <input type='checkbox' name='jogo' id='dota' value='dota'>Dota 2
+        </label>
+        
+        <label for='pubg'>
+          <input type='checkbox' name='jogo' id='pubg' value='pubg'><abbr title='Players Unknown BattleGround'>PUBG</abbr>
+        </label>
+        
+        <label for='fortnite'>
+          <input type='checkbox' name='jogo' id='fortnite' value='fortnite'>Fortnite
+        </label>
+        
+        <label for='freefire'>
+          <input type='checkbox' name='jogo' id='freefire' value='freefire'>Free Fire
+        </label>
+        
+        <label for='gc'>
+          <input type='checkbox' name='jogo' id='gc' value='gc'>Grand Chase
+        </label>
+        
+        <label for='gartic'>
+          <input type='checkbox' name='jogo' id='gartic' value='gartic'>Gartic
+        </label>
       </fieldset>
       
       <label for='experiencia'>Escreva um pouco sobre sua experiência com os jogos</label>
       <textarea id='experiencia'></textarea>
       
-      <input type='submit' id='submit'>
+      <div id='submit-button'>
+        <input type='submit' id='submit'>
+      </div>
     </form>
   </body>
 </html>

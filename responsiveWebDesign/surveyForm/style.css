@@ -1,11 +1,101 @@
 body {
-    background: url(plano-de-fundo.png);
-}
-
-form {
+    background: url(https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/surveyForm/plano-de-fundo.png);
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: -30px;
+    font-size: 25px;
+  }
+  
+  label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  legend {
+    font-size: 20px;
+  }
+  
+  form {
     margin: auto;
     max-width: 800px;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.767);
-    color: white;
-}
+    padding: 0px 50px 50px 50px;
+    margin-top: 100px;
+    background-color: rgba(200, 200, 200, 0.93);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 30px;
+  }
+  
+  fieldset {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .input-barra {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 18px;
+    min-height: 100px;
+  }
+  
+  input[type='radio'] {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+  }
+  
+  input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+  }
+  
+  #submit-button {
+    padding: 0px 30px 0px 30px;
+  }
+  
+  input[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    font-size: 22px;
+    background-color: rgb(50, 180, 50);
+  }
+  
+  input[type='submit']:hover {
+    background-color: rgb(50, 200, 50);
+  }
+  
+  @media (max-width: 400px) {
+    form {
+      padding: 0px 10px 30px 10px;
+    }
+  
+  }
+  
