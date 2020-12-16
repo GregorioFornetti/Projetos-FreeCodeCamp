@@ -86,6 +86,7 @@ body {
     border: none;
     font-size: 22px;
     background-color: rgb(50, 180, 50);
+    cursor: pointer;
   }
   
   input[type='submit']:hover {
