@@ -1,64 +1,164 @@
 :root {
-    --chumbo: rgb(65, 60, 64);
-    --cinza: rgb(111, 110, 115);
-    --azul_claro: rgb(165, 169, 179);
-    --cinza_claro: rgb(217, 217, 217);
-    --offwhite: rgb(242, 242, 242);
-    --indigo: rgb(93, 97, 138);
-    --bege: rgb(183, 167, 145);
-    --chumbo_complement: rgb(190, 195, 191);
-  }
+  --chumbo: rgb(65, 60, 64);
+  --cinza: rgb(111, 110, 115);
+  --azul_claro: rgb(165, 169, 179);
+  --cinza_claro: rgb(217, 217, 217);
+  --offwhite: rgb(242, 242, 242);
+  --indigo: rgb(93, 97, 138);
+  --bege: rgb(183, 167, 145);
+  --chumbo_complement: rgb(190, 195, 191);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 10px;
+  background-color: var(--cinza, grey);
+  width: 100%;
+  position: fixed;
   
-  body {
-    margin: 0;
-    font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav {
+  margin-top: 12px;  /* Alinhar botões com a lingua da cobra do logo */
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: var(--off-white, white);
+  font-size: 30px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background-color: rgb(99, 98, 100);
+}
+
+main {
+  padding-top: 125px;
+}
+
+section {
+  margin: auto;
+  padding: 20px;
+}
+
+.sec-cinza {
+  background-color: var(--cinza_claro, grey);
+}
+
+.sec-azul {
+  background-color: var(--azul_claro, blue);
+}
+
+.section-div {
+  max-width: 860px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  color: var(--chumbo, black);
+  font-size: 20px;
+}
+
+#div-produtos {
+  display: grid;
+  grid-gap: 125px 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-produto {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+#email {
+  width: 80%;
+  padding: 7px 0px 7px 0px;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#submit {
+  background-color: rgb(11, 122, 16);
+  margin-top: 14px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50%;
+  border-radius: 10px;
+  padding: 3px 0px 3px 0px;
+  color: var(--off_white, white);
+}
+
+#submit:hover {
+  background-color: rgb(18, 148, 25);
+}
+
+@media (max-width: 860px) {
+  #header-img {
+    margin: auto;
+    width: 250px;
+    height: auto;
   }
-  
-  header {
-    padding: 10px;
-    background-color: var(--cinza, grey);
-    
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .nav-link {
-    color: var(--off-white, white);
-    font-size: 30px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
+
   nav {
-    margin-top: 12px;  /* Alinhar botões com a lingua da cobra do logo */
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  header {
+    padding: 0;
   }
   
-  .nav-link:hover {
-    background-color: rgb(99, 98, 100);
+  main {
+    padding-top: 227px;
   }
   
-  @media (max-width: 850px) {
-    #header-img {
-      margin: auto;
-      width: 250px;
-      height: auto;
-    }
-
-    nav {
-      width: 100%;
-    }
-
-    .nav-link {
-      display: block;
-      text-align: center;
-      width: 100%;
-      font-size: 20px;
-    }
-
-    header {
-      padding: 0;
-    }
+  .img-produto {
+    padding-bottom: 100px;
   }
+  
+  #div-produtos {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  #prod-img-2 {
+    grid-row: 4/5;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  #email {
+    width: 100%;
+  }
+}

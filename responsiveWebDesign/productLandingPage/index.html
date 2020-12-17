@@ -10,10 +10,71 @@
     <header id='header'>
       <img src="https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/productLandingPage/imagens/LogoCriPython.png" id="header-img">
       <nav id='nav-bar'>
-        <a class='nav-link' href='#'>Sobre</a>
-        <a class='nav-link' href='#'>Produtos</a>
-        <a class='nav-link' href='#'>Mais informações</a>
+        <a class='nav-link' href='#sobre'>Sobre</a>
+        <a class='nav-link' href='#produtos'>Produtos</a>
+        <a class='nav-link' href='#mais-info'>Mais informações</a>
       </nav>
     </header>
+    
+    <main>
+      <section id='sobre' class='sec-azul'>
+        <div class='section-div'>
+          <h1>Sobre o projeto</h1>
+          <p>
+            CriPython é um projeto sobre criptografia que tem o intuito de traduzir ou encriptar mensagens. O usuário que estiver usando o programa tem liberdade para escolher uma das cifras disponíveis e utiliza-la para encriptar/traduzir um texto, podendo ver na prática como que funcionam algumas cifras. Além disso, nesse programa existem os utilitários, que são implementações que tentam desvendar uma mensagem encriptada sem a sua chave de tradução. E para finalizar, outro objetivo desse projeto é explicar um pouco sobre o assunto cifras de criptografia.
+          </p>
+        </div>
+      </section>
+      
+      <section id='produtos' class='sec-cinza'>
+        <div class='section-div' id='div-produtos'>
+          <div class='div-conteudo-produto'>
+            <h2>CripPython desktop</h2>
+            <p>
+                Versão desktop do programa. É a versão original que possui mais funcionalidades, como por exemplo, encoding UTF-8 e base64, cifras de criptografias classicas, conversor de bases numéricas, menu de opções com temas personalizados, idiomas selecionaveis e armazenamento de chaves padrões para não precisar ficar escrevendo a mesma chave toda hora ! Acesse a pagina do github desse projeto a baixe-o gratuitamente !
+            </p>
+          </div>
+          <img src="https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/productLandingPage/imagens/CripDesktop-grande.png" alt='Imagem do menu principal do CriPython desktop' class='img-produto'>
+          
+          <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/productLandingPage/imagens/CripWeb-peq.JPG' alt='Imagem da pagina do CriPython web' class='img-produto' id='prod-img-2'>
+          <div class='div-conteudo-produto'>
+            <h2>CripPython web</h2>
+            <p>
+                Versão web do programa. Essa versão do programa não possui todas as funcionalidades como a versão desktop, porém, como essa versão é acessada por um navegador de internet, é possível utiliza-la pelo celular, tablet, computador, notebook, etc. Essa versão possui algumas cifras classicas como: Cifra de César, Cifra de Substituição simples e Cifra de Vigenère. Além disso, possui dois utilitário: Adivinhador César e Força bruta da Cifra de César, que tentam quebrar a cifra de César. Clique aqui e acesse CriPython web !
+            </p>
+          </div>
+          
+          <div class='div-conteudo-produto'>
+            <h2>CripPython wiki</h2>
+            <p>
+                Como um dos objetivos desse projeto é explicar sobre cifras de criptografia, foi criado um guia para esse programa que explica cada cifra implementada. Além disso, há explicações sobre as opções do menu e sobre os utilitários desse projeto. Clique aqui para acessar a wiki !
+            </p>
+          </div>
+          <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/productLandingPage/imagens/Wiki-medio1.JPG' alt='Imagem da pagina principal da wiki' class='img-produto'>
+        </div>
+        
+        <div class='section-div' style='margin-top: 150px;'>
+          <h2 style='text-align: center;'>Videos explicativos</h2>
+          <p style='text-align: center;'>
+            Para ajudar mais no aprendizado sobre criptografias, uma série de vídeos tutorias foram gravado. Clique aqui e acesse a playlist
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FabgIHcBN3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id='video' allowfullscreen></iframe>
+          
+        </div>
+      </section>
+      
+      <section id='mais-info' class='sec-azul' style='padding-top: 50px;'>
+        <form id='form' action=' https://www.freecodecamp.com/email-submit'>
+          <label for='email'>
+            <h2 style='text-align: center;'>Cadastre o seu e-mail para receber atualizações !</h2>
+          </label>
+          
+          <div style='text-align: center;'>
+            <input type='email' id='email' placeholder='Digite o seu e-mail' name='email' required>
+            <input type='submit' id='submit' value='Cadastrar'>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
