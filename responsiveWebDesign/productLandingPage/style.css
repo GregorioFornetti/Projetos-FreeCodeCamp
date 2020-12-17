@@ -65,6 +65,16 @@ section {
   margin: auto;
 }
 
+.section-link {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 30px;
 }
