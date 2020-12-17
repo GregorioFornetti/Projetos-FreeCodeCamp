@@ -1,0 +1,64 @@
+:root {
+    --chumbo: rgb(65, 60, 64);
+    --cinza: rgb(111, 110, 115);
+    --azul_claro: rgb(165, 169, 179);
+    --cinza_claro: rgb(217, 217, 217);
+    --offwhite: rgb(242, 242, 242);
+    --indigo: rgb(93, 97, 138);
+    --bege: rgb(183, 167, 145);
+    --chumbo_complement: rgb(190, 195, 191);
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    padding: 10px;
+    background-color: var(--cinza, grey);
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    color: var(--off-white, white);
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  nav {
+    margin-top: 12px;  /* Alinhar botões com a lingua da cobra do logo */
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(99, 98, 100);
+  }
+  
+  @media (max-width: 850px) {
+    #header-img {
+      margin: auto;
+      width: 250px;
+      height: auto;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .nav-link {
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    header {
+      padding: 0;
+    }
+  }
