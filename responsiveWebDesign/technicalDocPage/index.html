@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='style.css' rel='stylesheet'>
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id='navbar'>
+        <header>
+          <h2 id='nav-h'>Tópicos</h2>
+        </header>
+        <ul id='nav-list'>
+          <li class='nav-item'><a href='#O_que_é_Python_?' class='nav-link'>O que é Python ?</a></li>
+          <li class='nav-item'><a href='#Instalando_Python' class='nav-link'>Instalando Python</a></li>
+          <li class='nav-item'><a href='#Editor_de_texto' class='nav-link'>Editor de texto</a></li>
+          <li class='nav-item'><a href='#Olá,_mundo_!' class='nav-link'>Olá, mundo !</a></li>
+          <li class='nav-item'><a href='#Variáveis' class='nav-link'>Variáveis</a></li>
+          <li class='nav-item'><a href='#Referencias_e_recomendações' class='nav-link'>Referencias e recomendações</a></li>
+        </ul>
+      </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='O_que_é_Python_?'>
+        <header>
+          <h2>O que é Python ?</h2>
+        </header>
+        <p>
+          Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos Python Software Foundation. Foi considerada pelo público a 3ª linguagem "mais amada", de acordo com uma pesquisa conduzida pelo site Stack Overflow em 2018, e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk. Devido às suas características, ela é principalmente utilizada para processamento de textos, dados científicos e criação de CGIs para páginas dinâmicas para a web.
+        </p>
+      </section>
+      
+      <section class='main-section' id='Instalando_Python'>
+        <header>
+          <h2>Instalando Python</h2>
+        </header>
+        <p>
+          Provavelmente, se você é usuário de MacOS ou Linux você pode pular essa parte do tutorial pois Python já vem instalado nesses sistemas operacionais. Se você é usuário Windows e ainda não instalou Python, siga os passos abaixo para instala-lo.
+        </p>
+        <ol>
+          <li>
+            <p>Primeiro vamos baixar o Python. Para isso, <a href='https://www.python.org/' target='_blank' rel='external'>clique aqui para acessar a pagina oficial do Python</a>. Nessa pagina, passe o mouse por cima da opção "Downloads" e clique em "Windows"</p>
+          </li>
+          <li>
+            <p>Agora clique no primeiro link dessa pagina referente ao download da versão mais recente do Python. No meu caso, a versão mais recente é a 3.9.1, porém, para você essa versão pode ser mais recente do que a minha.</p>
+            <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/technicalDocPage/imagens/pag_python.JPG' alt='Imagem da pagina do Python mostrando onde clicar para fazer o download'>
+          </li>
+          <li>
+            <p>Depois de baixar o instalador, execute-o e prossiga a instalação. Marque a opção de adicionar o Python para o PATH para evitar problemas futuros. Selecione a opção de instalação padrão.</p>
+            <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/technicalDocPage/imagens/Inst_python.JPG' alt='Imagem do instalador Python indicando onde marcar a opção do path'>
+          </li>
+          <li>
+            <p>Para verificar se o Python foi instalado corretamente, abra o terminal e escreva "python". Se ele foi instalado corretamente, o seu terminal responderá de forma parecida com a imagem abaixo. Se alguma mensagem de erro dizer que o comando "python não foi reconhecido", tente instala-lo novamente. Caso você estaja usando MacOS ou Linux, teste esse comando no terminal para verificar se realmente o Python está instalado.</p>
+          </li>
+          <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/technicalDocPage/imagens/terminal.JPG' alt='Imagem do terminal com a mensagem de sucesso'>
+        </ol>
+      </section>
+      
+      <section class='main-section' id='Editor_de_texto'>
+        <header>
+          <h2>Editor de texto</h2>
+        </header>
+        <p>
+          Antes de começarmos a criar nossos códigos em Python, é necessário que você tenha algum editor de texto/código. Se ainda não tiver nenhum editor, recomendo que instale o <a href='https://code.visualstudio.com/' target='_blank' rel='external'>Visual Studio Code</a>, pois as imagens que utilizarei nos próximos tópicos serão desse editor de código, e para se familiarizar-se melhor e interessante que você utilize esse mesmo editor. Caso você tenha algum problema ao instalar ou baixar o editor, <a href='https://www.youtube.com/watch?v=49K-Zxc8A7A' target='_blank' rel='external'>tente instala-lo assistindo esse vídeo do canal "Mão no código"</a>
+        </p>
+      </section>
+      
+      <section class='main-section' id='Olá,_mundo_!'>
+        <header>
+          <h2>Olá, mundo !</h2>
+        </header>
+        <p>
+          Depois de instalar o Python e um editor de texto, vamos criar nosso primeiro código, que será o clássico "Olá, mundo !".
+        </p>
+        <ol>
+          <li>
+            <p>Crie uma arquivo no seu editor de código com o final igual a ".py". O arquivo pode ter qualquer nome, mas a extensão dele precisa ser "py". Exemplo: "primeiro_codigo.py" ou "ola_mundo.py"</p>
+          </li>
+          <li>
+            <p>Com esse arquivo aberto no editor de texto escreva o comando <pre><code>print("Olá, mundo !")</code></pre> O comando print() é conhecido como uma função, e nesse caso, ela é responsável por "imprimir" textos na tela do seu computador. Essa função aceita como parâmetro um texto qualquer, e nesse caso o texto é "Olá, mundo !", mas ele poderia ser qualquer outro texto (não esquecer de colocar as aspas, se esquecer de colocar ocorrerá problemas.</p>
+          </li>
+          <li>
+            <p>Agora o código ja está pronto, só falta executarmos ele. Para isso, se você estiver usando o editor Visual Studio Code, clique em "Run" no menu do canto superior, e depois em "Run without debuging". Ao realizar isso, seu programa será executado e o resultado será mostrado no canto inferior do editor de texto.</p>
+            <img src='https://raw.githubusercontent.com/GregorioFornetti/Projetos-FreeCodeCamp/main/responsiveWebDesign/technicalDocPage/imagens/Ola_mundo.JPG' alt='Imagem do editor de texto com o programa executado'>
+          </li>
+        </ol>
+      </section>
+      
+      <section class='main-section' id='Variáveis'>
+        <header>
+          <h2>Variáveis</h2>
+        </header>
+        <p>
+          Agora vamos falar um pouco sobre variaveis, que são muito importantes para qualquer linguagem de programação. Logo abaixo esta uma lista de variaveis e como declara-las.
+        </p>
+        <ul>
+          <li>
+            <p>int: variável que armazena números inteiros (ex: 100, -100, 1346123, -129424, etc).<br> Para criar uma variável do tipo "int" basta escrever o código abaixo (o nome da variável é importante para poder utiliza-la depois, e pode ser qualquer texto que não seja uma palavra reservada pela lunguagem e nem um texto com inicio numérico). OBS: No código abaixo foi utilizado o número 10, porém, poderia ser qualquer outro número inteiro</p>
+            <pre><code>nome_variavel = 10</code></pre>
+          </li>
+          <li>
+            <p>float: variável que armazena números flutuantes (com casas decimais) OBS: casas decimais são representadas com "." ao invés de ",". Exemplo de float: 1.23, -23.2, 12.0, 12456.1256</p>
+            <pre><code>nome_variavel = 12.5</code></pre>
+          </li>
+          <li>
+            <p>string: variável que armazena textos (pode ser representadas com ' ou "). Ex: "Olá, mundo !", 'Tudo bem ?', "Como vai ?"</p>
+            <pre><code>nome_variavel = 'Olá, mundo !'</pre></code>
+          </li>
+          <li>
+            <p>boolean: armazená valores booleanos, que no caso pode ser 2 valores: True (verdadeiro) ou False (falso).</p>
+            <pre><code>nome_variavel = True</code></pre>
+          </li>
+        </ul>
+        <p>Existem outras variáveis, porém essas são as mais básicas e essenciais para o começo.</p>
+      </section>
+  
+      <section class='main-section' id='Referencias_e_recomendações'>
+        <header>
+          <h2>Referencias e recomendações</h2>
+        </header>
+        <p>
+          Alguns textos dessa página foram copiados da <a href='https://pt.wikipedia.org/wiki/Python' target='_blank' rel='external'>WikiPedia sobre Python</a>. Caso queira aprender mais sobre Python, recomendo que você assista <a href='https://www.youtube.com/user/cursosemvideo' target='_blank' rel='external'>os vídeos sobre Python do Curso em Vídeo</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
